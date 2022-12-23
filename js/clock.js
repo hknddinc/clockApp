@@ -20,7 +20,7 @@ function clockTimeFunction(){
 
     let clockInfo = document.querySelector('#clockInfo');
 
-    clockInfo.innerHTML = `${datedTime} : ${datedMinute} : ${datedSecond} : ${datedDay}`;
+    clockInfo.innerHTML = `${datedTime} : ${datedMinute} : ${datedSecond} ${datedDay}`;
 }
 
 setInterval(clockTimeFunction, 100);
