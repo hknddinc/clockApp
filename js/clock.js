@@ -20,7 +20,7 @@ function clockTimeFunction(){
 
     let clockInfo = document.querySelector('#clockInfo');
 
-    clockInfo.innerHTML = `${datedTime} : ${datedMinute} : ${datedSecond} ${datedDay}`;
+    clockInfo.innerHTML = `${String(datedTime).padStart(2,'0')} : ${String(datedMinute).padStart(2,'0')} : ${String(datedSecond).padStart(2,'0')} : ${datedDay}`;
 }
 
-setInterval(clockTimeFunction, 100);
+setInterval(clockTimeFunction, 1000);
